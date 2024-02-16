@@ -101,7 +101,12 @@
     font-size: 15px;
   }
   
-
+  .about{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+  }
   .products {
     display: flex;
     flex-wrap: wrap;

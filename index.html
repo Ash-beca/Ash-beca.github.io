@@ -5,38 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sibakosmetics</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body class="home-page">
   <header>
     <nav>
-      <a href="" class="logo"><img src="./img/logo.jpg" alt=""></a>
-      <a href="#">Home</a>
-      <a href="#">Products</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-      <div class="icon">
-        <a href="" class="search"><img src="./img/search.jpg" ></a>
-        <a href="" class="cart"><img src="./img/shopping-cart.png" ></a>
+      <a href="index.html" class="logo"><img src="./img/logo.jpg" alt=""></a>
+      <div class="nav-links" id="navlinks">
+              <a href="Index.html">Home</a>
+              <a href="product-details.html">Products</a>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+      </div>    
+        <div class="icon">
+            <i class="fa fa-search" style="font-size:36px"></i>
+            <i class="fa fa-shopping-cart" style="font-size:36px"></i>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
       </div>
     </nav>
   </header>
 
-  <main>
-      <h1></h1>
+    <section class="shop">
+      <h1>Siba Kosmetics</h1>
       <p>Say goodbye to the hassle of hopping from one store to another in search of the perfect beauty products. At SibaK, discover an extensive collection of glamorous cosmetics, available in various shades and styles, all at your fingertips with just a few clicks.</p>
-      <a href="#" class="btn">SHOP NOW</a>
+      <a href="product-details.html" class="btn">SHOP NOW</a>
     </section>
-  </section>
 
   <!--------- About Section----------->
 
 <section class="about">
-  <h1>About Section</h1>
+  <h2>About Us</h2>
+  <div class="about-col">
   <p>Sibakosmetics was created to make it easy for women to find affordable yet quality makeup brands just within a click of a fingertips.</p>
+  </div>
+
+  <div class="row">
+        <img src="img/makeup.png">
+    </div>
+  </div> 
   </section>
   </main>
   <footer>
+    <section class="footer">
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-github"></i>
     <p>&copy; 2020 Sibakosmetics</p>
   </footer>
+<script>
+
+  var navLinks = document.getElementById("navLinks");
+  function showMenu(){
+      navLinks.style.right = "0";
+  }
+  function hideMenu(){
+      navLinks.style.right = "-200px";
+  }
+
+</script>
 </body>
 </html>

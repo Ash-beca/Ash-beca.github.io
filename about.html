@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sibakosmetics - Shopping Cart</title>
+  <title>Sibakosmetics - About page</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -18,56 +18,62 @@
                 <a href="contact.html">Contact</a> 
         <div class="icon">
             <i class="fa fa-search" style="font-size:36px"></i>
-            <i class="fa fa-shopping-cart" style="font-size:36px"></i>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <a href="cart.html" class="fa fa-shopping-cart" style="font-size:36px"></a>
         </div>
+        <div class="dropdown">
+            <button onclick="showDropdown()">
+              <i class="fa fa-bars" aria-label="Menu"></i>
+            </button>
+            <div id="dropdown-content" class="dropdown-content">
+              <a href="index.html">Home</a>
+              <a href="product-details.html">Products</a>
+              <a href="about.html">About Us</a>
+              <a href="contact.html">Contact</a>
+              <a href="cart.html">Cart</a>
+            </div>
+          </div>
       </nav>
-      <h1>About Us</h1>
     </section>
     
-    <section class="about">
-    
-        <div class="row">
-            <div class="about-col">
-                <p>Experience the epitome of online beauty shopping at SibaK, where the freshest cosmetic trends meet affordable prices! Our collection boasts the chicest makeup and skincare products to enhance your beauty and boost your confidence. Discover a constant stream of new favorites, all crafted to make you look and feel your best, without breaking the bank. Elevate your confidence with SibaK – your go-to destination for affordable glamour.</p>
-                <a href="contact.html" class="hero-btn b-btn">CONTACT US</a>
+<section class="about">
+    <h1>About Us</h1>
+    <div class="row">
+         <div class="about-col">
+            <p>Experience the epitome of online beauty shopping at SibaK, where the freshest cosmetic trends meet affordable prices! Our collection boasts the chicest makeup and skincare products to enhance your beauty and boost your confidence. Discover a constant stream of new favorites, all crafted to make you look and feel your best, without breaking the bank. Elevate your confidence with SibaK – your go-to destination for affordable glamour.</p>
+            <a href="contact.html" class="hero-btn b-btn">CONTACT US</a>
             </div>
             <div class="about-col">
                 <img src="img/makeup.png">
             </div>
         </div>
-
     </section>
-
-
-    <!-------Footer------->
-    
-    <section class="footer">
-        <h4>About Us</h4>
+    </main>
+    <footer>
+        <section class="footer">
             <div class="icons">
                 <i class="fa fa-facebook"></i>
                 <i class="fa fa-twitter"></i>
                 <i class="fa fa-instagram"></i>
                 <i class="fa fa-linkedin"></i>
                 <i class="fa fa-github"></i>
-            </div>
-            <p>&copy; 2020 Sibakosmetics</p>
-        </section>
-    </section
-
-    <!--------JavaScript for Toggle Menu-------->
-    <script>
+        <p>&copy; 2020 Sibakosmetics</p>
+    </footer>
+</body>
+</html>
     
-        var navLinks = document.getElementById("navLinks");
-        function showMenu(){
-            navLinks.style.right = "0";
-        }
-        function hideMenu(){
-            navLinks.style.right = "-200px";
-        }
+<script>
     
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+         navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    function showDropdown() {
+      document.getElementById("dropdown-content").classList.toggle("show");
+    }
     </script>
-    
     </body>
     </html>
   

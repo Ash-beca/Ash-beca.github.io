@@ -11,14 +11,45 @@
 <body>
     <nav>
         <a href="" class="logo"><img src="./img/logo.jpg" alt=""></a>
-            <i class="fa fa-times" onclick="hideMenu()"></i>
                 <a href="Index.html">Home</a>
                 <a href="product-details.html">Products</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a> 
         <div class="icon">
             <i class="fa fa-search" style="font-size:36px"></i>
-            <i class="fa fa-shopping-cart" style="font-size:36px"></i>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-        </div>
+            <a href="cart.html" class="fa fa-shopping-cart" style="font-size:36px"></a>
+          </div>
+          <div class="dropdown">
+              <button onclick="showDropdown()">
+                <i class="fa fa-bars" aria-label="Menu"></i>
+              </button>
+              <div id="dropdown-content" class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="product-details.html">Products</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="cart.html">Cart</a>
+              </div>
+            </div>
       </nav>
+    </header>
+    <main>
+    </main>
+    <footer>
+      <section class="footer">
+        <div class="icons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-linkedin"></i>
+          <i class="fa fa-github"></i>
+      <p>&copy; 2020 Sibakosmetics</p>
+    </footer>
+  </body>
+  </html>
+  <script>
+    function showDropdown() {
+      document.getElementById("dropdown-content").classList.toggle("show");
+    }
+    
+    </script>

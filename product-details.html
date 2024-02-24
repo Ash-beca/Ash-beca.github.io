@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sibakosmetics - Shimmering Eyeshadow Palette</title>
+  <title>Sibakosmetics - Product page</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -18,27 +18,39 @@
                 <a href="contact.html">Contact</a> 
         <div class="icon">
             <i class="fa fa-search" style="font-size:36px"></i>
-            <i class="fa fa-shopping-cart" style="font-size:36px"></i>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <a href="cart.html" class="fa fa-shopping-cart" style="font-size:36px"></a>
+          </div>
+          <div class="dropdown">
+              <button onclick="showDropdown()">
+                <i class="fa fa-bars" aria-label="Menu"></i>
+              </button>
+              <div id="dropdown-content" class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="product-details.html">Products</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="cart.html">Cart</a>
+              </div>
+            </div>  
         </div>
       </nav>
   </header>
   <main>
-    <section class="product-detail">
-      <img src="img/eyeshadow.jpg" alt="Shimmering Eyeshadow Palette">
-      <div class="info">
+    <section class="product-details">
+      <p>Prepare to be mersmarised  by our range of beauty services!!!</p>
+      <div class="product-card" productId="product 1">
+        <img src="img/eyeshadow.jpg" alt="Shimmering Eyeshadow Palette">
         <h1>Shimmering Eyeshadow Palette</h1>
         <p>R149.99</p>
-        <p>Create endless eye looks with this palette of 12 highly pigmented, blendable shades.</p>
         <button>Add to Cart</button>
       </div>
       <div class="product-card">
         <img src="img/mascara.jpg" alt="product 2">
-        <h3>Voluminous Mascara</h3>
+        <h2>Voluminous Mascara</h2>
         <p>R79.99</p>
         <button>Add to Cart</button>
       </div>
-      <div class="product-card">
+      <div class="product-card" productId="product3">
         <img src="img/pore.jpg" alt="product 3">
         <h3>Bamboo Charcoal Bubble Face Mask (10 Pieces)</h3>
         <p>R100</p>

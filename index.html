@@ -20,14 +20,25 @@
       </div>    
         <div class="icon">
             <i class="fa fa-search" style="font-size:36px"></i>
-            <i class="fa fa-shopping-cart" style="font-size:36px"></i>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-      </div>
+            <a href="cart.html" class="fa fa-shopping-cart" style="font-size:36px"></a>
+        </div>
+        <div class="dropdown">
+              <button onclick="showDropdown()">
+                <i class="fa fa-bars" aria-label="Menu"></i>
+              </button>
+              <div id="dropdown-content" class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="product-details.html">Products</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="cart.html">Cart</a>
+              </div>
+            </div>
     </nav>
   </header>
 
     <section class="shop">
-      <h1>Siba Kosmetics</h1>
+      <h1></h1>
       <p>Say goodbye to the hassle of hopping from one store to another in search of the perfect beauty products. At SibaK, discover an extensive collection of glamorous cosmetics, available in various shades and styles, all at your fingertips with just a few clicks.</p>
       <a href="product-details.html" class="btn">SHOP NOW</a>
     </section>
@@ -36,12 +47,13 @@
 
 <section class="about">
   <h2>About Us</h2>
-  <div class="about-col">
-  <p>Sibakosmetics was created to make it easy for women to find affordable yet quality makeup brands just within a click of a fingertips.</p>
-  </div>
 
   <div class="row">
-        <img src="img/makeup.png">
+    <div class="about-col">
+    <p>Sibakosmetics was created to make it easy for women to find affordable yet quality makeup brands just within a click of a fingertips- Our collection boasts the chicest makeup and skincare products to enhance your beauty and boost your confidence.</p>
+    </div>
+    <div class="about-col">
+      <img src="img/makeup.png">
     </div>
   </div> 
   </section>
@@ -56,6 +68,9 @@
         <i class="fa fa-github"></i>
     <p>&copy; 2020 Sibakosmetics</p>
   </footer>
+</body>
+</html>
+
 <script>
 
   var navLinks = document.getElementById("navLinks");
@@ -65,7 +80,11 @@
   function hideMenu(){
       navLinks.style.right = "-200px";
   }
-
 </script>
+<script>
+  function showDropdown() {
+    document.getElementById("dropdown-content").classList.toggle("show");
+  }
+  </script>
 </body>
 </html>

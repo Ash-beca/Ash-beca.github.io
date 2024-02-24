@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sibakosmetics- Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  <header>
+    <nav>
+        <a href="" class="logo"><img src="./img/logo.jpg" alt=""></a>
+            <a href="Index.html">Home</a>
+            <a href="product-details.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>  
+        <div class="icon">
+            <i class="fa fa-search" style="font-size:36px"></i>
+            <a href="cart.html" class="fa fa-shopping-cart" style="font-size:36px"></a>
+        </div>
+        <div class="dropdown">
+            <button onclick="showDropdown()">
+              <i class="fa fa-bars" aria-label="Menu"></i>
+            </button>
+            <div id="dropdown-content" class="dropdown-content">
+              <a href="index.html">Home</a>
+              <a href="product-details.html">Products</a>
+              <a href="about.html">About Us</a>
+              <a href="contact.html">Contact</a>
+              <a href="cart.html">Cart</a>
+            </div>
+          </div>
+    </nav>
+  </header>
+    <main>
+        <section class="contact">
+            <h1>We'd love to hear from you.</h1>
+            <div class="row">
+                <div class="contact-col">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d278665.70205343655!2d28.047260299999997!3d-26.202921199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e957751c12c36a1:0x78fb864f9c0c8241!2sJohannesburg%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1708016289741!6e0!7m1!1shttps://www.google.com/maps/search/?api=1&query=Johannesburg%2C%20South%20Africa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="contact-col">
+                        <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>82 Helen Joseph Street</h5>
+                            <p>Johannesburg, South Africa</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>+27 79 202 2833</h5>
+                            <p>Monday - Friday: 8am - 6pm</p>
+                            <p>weekends/Public holidays: 8am - 3pm </p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                            <h5>Sibakosmetics@gmail.com</h5>
+                        </span>
+                    </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+      <section class="footer">
+        <div class="icons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-linkedin"></i>
+          <i class="fa fa-github"></i>
+     <p>&copy; 2020 Sibakosmetics</p>
+    </footer>
+</body>
+</html>
+
+<script>
+    function showDropdown() {
+      document.getElementById("dropdown-content").classList.toggle("show");
+    }
+    </script>
